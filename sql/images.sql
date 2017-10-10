@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS images;
+
+CREATE TABLE images(
+    id SERIAL PRIMARY KEY,
+    user_id INT NOT NULL,
+    image VARCHAR NOT NULL,
+    status VARCHAR,
+    image_created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
